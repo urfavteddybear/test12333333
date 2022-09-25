@@ -24,7 +24,7 @@ module.exports = {
       password: process.env.pass1 || "",
       retryAmount: 9999999999999999, //- The amount of times to retry connecting to the node if connection got dropped.
       retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
-      secure: process.env.secure1 || , //- Can be either true or false. Only use true if ssl is enabled!
+      secure: false, //- Can be either true or false. Only use true if ssl is enabled!
     },
 //     {
 //       identifier: process.env.identifier2 || "", //- Used for indentifier in stats commands.
