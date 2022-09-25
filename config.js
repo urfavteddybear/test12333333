@@ -18,13 +18,22 @@ module.exports = {
   // The default one should work fine, these are picked due to their speed and not using cloudflare.
   nodes: [
     {
-      identifier: "Main", //- Used for indentifier in stats commands.
-      host: "kartadharta.xyz",
-      port: 3000,
-      password: "kdlavalink",
-      retryAmount: 15, //- The amount of times to retry connecting to the node if connection got dropped.
+      identifier: process.env.identifier1 || "", //- Used for indentifier in stats commands.
+      host: process.env.host1 || "",
+      port: process.env.port1 || ,
+      password: process.env.pass1 || "",
+      retryAmount: 9999999999999999, //- The amount of times to retry connecting to the node if connection got dropped.
       retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
-      secure: false, //- Can be either true or false. Only use true if ssl is enabled!
+      secure: process.env.secure1 || , //- Can be either true or false. Only use true if ssl is enabled!
+    },
+    {
+      identifier: process.env.identifier2 || "", //- Used for indentifier in stats commands.
+      host: process.env.host2 || "",
+      port: process.env.port2 || ,
+      password: process.env.pass2 || "",
+      retryAmount: 9999999999999999, //- The amount of times to retry connecting to the node if connection got dropped.
+      retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
+      secure: process.env.secure2 || , //- Can be either true or false. Only use true if ssl is enabled!
     },
     
   ],
