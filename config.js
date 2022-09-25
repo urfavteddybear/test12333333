@@ -26,15 +26,15 @@ module.exports = {
       retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
       secure: process.env.secure1 || , //- Can be either true or false. Only use true if ssl is enabled!
     },
-    {
-      identifier: process.env.identifier2 || "", //- Used for indentifier in stats commands.
-      host: process.env.host2 || "",
-      port: process.env.port2 || ,
-      password: process.env.pass2 || "",
-      retryAmount: 9999999999999999, //- The amount of times to retry connecting to the node if connection got dropped.
-      retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
-      secure: process.env.secure2 || , //- Can be either true or false. Only use true if ssl is enabled!
-    },
+//     {
+//       identifier: process.env.identifier2 || "", //- Used for indentifier in stats commands.
+//       host: process.env.host2 || "",
+//       port: process.env.port2 || ,
+//       password: process.env.pass2 || "",
+//       retryAmount: 9999999999999999, //- The amount of times to retry connecting to the node if connection got dropped.
+//       retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
+//       secure: process.env.secure2 || , //- Can be either true or false. Only use true if ssl is enabled!
+//     },
     
   ],
   embedColor: "#ffeac8", //Color of the embeds, hex supported
