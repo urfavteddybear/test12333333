@@ -20,7 +20,7 @@ module.exports = {
     {
       identifier: process.env.identifier1 || "", //- Used for indentifier in stats commands.
       host: process.env.host1 || "",
-      port: process.env.port1 || 0,
+      port: 3000,
       password: process.env.pass1 || "",
       retryAmount: 9999999999999999, //- The amount of times to retry connecting to the node if connection got dropped.
       retryDelay: 6000, //- Delay between reconnect attempts if connection is lost.
