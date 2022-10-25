@@ -44,7 +44,7 @@ module.exports = {
     activities: [
       {
         name: "Music | ,help", //Status Text
-        type: "LISTENING", // PLAYING, WATCHING, LISTENING, STREAMING
+        type: "LISTENING", // PLAYING, WATCHING, LISTENING, STREAMING.
       },
     ],
   },
